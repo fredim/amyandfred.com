@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Payment Site for 2007 Season</title>
+</head>
+<body>
+Yes, this page is ugly, but it only serves this one purpose.  Choose the option and click the buy now button to pay using Google Checkout.
+<form action="https://checkout.google.com/cws/v2/Merchant/856223201446797/checkoutForm" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm">
+    <table cellpadding="5" cellspacing="0" width="1%">
+        <tr>
+            <td align="right" width="1%">
+                <select name="item_selection_1">
+                    <option value="1">&#x24;50.00 - 2007 Season</option>
+                    <option value="2">&#x24;60.00 - 2007 Season + Survivor</option>
+                    <option value="3">&#x24;10.00 - Survivor Addon</option>
+                </select>
+                <input name="item_option_name_1" type="hidden" value="2007 Season"/>
+                <input name="item_option_price_1" type="hidden" value="50.0"/>
+                <input name="item_option_description_1" type="hidden" value="Pro Pick'em"/>
+                <input name="item_option_quantity_1" type="hidden" value="1"/>
+                <input name="item_option_currency_1" type="hidden" value="USD"/>
+                <input name="item_option_name_2" type="hidden" value="2007 Season + Survivor"/>
+                <input name="item_option_price_2" type="hidden" value="60.0"/>
+                <input name="item_option_description_2" type="hidden" value="Pro Pick'em plus Survivor"/>
+                <input name="item_option_quantity_2" type="hidden" value="1"/>
+                <input name="item_option_currency_2" type="hidden" value="USD"/>
+                <input name="item_option_name_3" type="hidden" value="Survivor Addon"/>
+                <input name="item_option_price_3" type="hidden" value="10.0"/>
+                <input name="item_option_description_3" type="hidden" value="Choose this if you paid for Pro Pick'Em, but forgot to include the Survivor fee."/>
+                <input name="item_option_quantity_3" type="hidden" value="1"/>
+                <input name="item_option_currency_3" type="hidden" value="USD"/>
+            </td>
+            <td align="left" width="1%">
+                <input alt="" src="https://checkout.google.com/buttons/buy.gif?merchant_id=856223201446797&amp;w=117&amp;h=48&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

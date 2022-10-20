@@ -1,0 +1,43 @@
+a { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; 
+	color: #0000FF; text-decoration: none}
+a:hover { 
+       	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; color: #3366CC; text-decoration: none}
+
+
+.home-bar {
+	BORDER: #fff 1px solid; 
+	COLOR: #000; BACKGROUND: #000000; TEXT-DECORATION: none;
+}
+
+#home-nav {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 14px; COLOR: #FFFFFF; BACKGROUND: #000000; 
+	TEXT-DECORATION: none;
+}
+
+#home-nav td {
+	 PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 5px; 
+	 font-size: 14px; COLOR: #FFFFFF; FONT-WEIGHT: bold;
+
+}
+#home-nav a {
+	font-size: 14px; COLOR: #FFFFFF; FONT-WEIGHT: bold;
+
+}
+#home-nav a:hover {
+	font-size: 14px; COLOR: #00CCFF; FONT-WEIGHT: bold;
+
+}
+
+
+#maincontent {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+}
+
+#maincontent h1 {
+	font-size: 12px; font-weight: bold; color: #339966;
+}
+
