@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>Guestbook - Amy & Fred's Wedding</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function validateForm() {
+  if (document.getElementById('realname').value == ""){
+    alert("Please enter your name.");
+  } else if (document.getElementById('comments').value =="") {
+    alert("Comments are blank!");
+  } else {
+    document.frmGuest.submit();
+  }
+}
+//-->
+</script>
+<link rel="stylesheet" href="amys.css" type="text/css">
+</head>
+
+<body bgcolor="#669966" text="#000000">
+<font color="#FFFFCC"></font> <font color="#FFFFCC"></font> 
+<table width="703" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="185" valign="top" colspan="3"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td width="495" height="126" valign="top"><img src="images/header.gif" width="513" height="185"></td>
+        </tr>
+      </table>
+    </td>
+    <td width="235" valign="top"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td width="190" height="185" valign="top"><img src="images/header2.gif" width="235" height="185"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td class="left-bar" width="84" valign="top" bgcolor="#339966"> 
+      <img src="images/barimages/bb-guestbook.gif" width="80" height="161">
+    </td>
+    <td width="160" valign="top" bgcolor="#FFFFCC" bordercolor="#FFFFFF"> 
+      <div id=left-nav>
+        <table width="100%" bordercolor="#FFFFFF" cellspacing="2" cellpadding="2">
+        <tr><td width="145">&nbsp;</td></tr>
+	<tr><td><a href="welcome.htm">Welcome</a></td></tr>
+        <tr><td><a href="brideandgroom.htm">Bride and Groom</a></td></tr>
+        <tr><td><a href="story.htm">Our Story</a></td></tr>
+        <tr><td><a href="proposal.htm">Proposal</a></td></tr>
+        <tr><td><a href="weddingparty.htm">The Wedding Party</a></td></tr>
+        <tr><td><a href="familyfriends.htm">Family and Friends</a></td></tr>
+        <tr><td><a href="thennow.htm">Then and Now</a></td></tr>
+        <tr><td><a href="weddinginfo.htm">Wedding Information</a></td></tr>
+        <tr><td><a href="accomodations.htm">Accomodations</a></td></tr>
+        <tr><td><a href="weddingdetails.htm">Wedding Details</a></td></tr>
+	<tr><td><a href="parties.htm">Bachelor Party</a></td></tr>
+        <tr><td><a href="honeymoon.htm">Honeymoon</a></td></tr>
+        <tr><td>Guestbook</td></tr>
+        <tr><td><a href="photoalbum.htm">Photo Album</a></td></tr>
+	<tr><td><a href="carpool.htm">Carpool Board</a></td></tr>
+        </table>
+      </div>
+
+    </td>
+    <td valign="top" colspan="2" bgcolor="#FFFFFF"> 
+     <div id=maincontent>
+      <form id=frmGuest name=frmGuest method=POST action="/cgi-bin/guestbook.pl">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td width="19" valign="top" rowspan="11"> 
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr> 
+                  <td width="19"></td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top" height="24" colspan="3">&nbsp; </td>
+            <td rowspan="11" width="51" valign="top">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td valign="top" height="37" colspan="3"> 
+              <p align="left"><img src="images/barimages/guestbook.gif" width="173" height="37"></p>
+            </td>
+          </tr>
+          <tr> 
+            <td height="19" valign="top" colspan="3">&nbsp; </td>
+          </tr>
+          <tr> 
+            <td height="24" valign="top" colspan="3"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Thanks 
+              for visiting our site. We would love to hear from you so please 
+              feel free to leave your comments below!</font></td>
+          </tr>
+          <tr> 
+            <td height="38" valign="top" colspan="3">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="28" valign="middle" width="105"> 
+              <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Your 
+                Name:</font></p>
+            </td>
+            <td width="20" rowspan="4" valign="top">&nbsp;</td>
+            <td valign="top" width="309"> 
+              <input type=text id=realname name=realname size=30>
+            </td>
+          </tr>
+          <tr> 
+            <td height="28" valign="middle"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">From 
+              (City, State):</font></td>
+            <td valign="top"> 
+              <input type=text name=from size=30>
+            </td>
+          </tr>
+          <tr> 
+            <td height="24" valign="middle"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Comments:</font></td>
+            <td valign="top" rowspan="2"> 
+              <textarea id=comments name=comments COLS=35 ROWS=4></textarea>
+              <p> 
+            </td>
+          </tr>
+          <tr> 
+            <td height="107"></td>
+          </tr>
+          <tr> 
+            <td height="35" colspan="3" valign="top"> 
+              <input type=button value="Sign Guestbook" onClick="validateForm();">
+              <input type=reset>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="3" valign="top">
+              <hr>
+<div id=guestbook>
+<!--begin-->
+<b>We would like to say that it was an honor to meet such a wonderful and fun couple on our honeymoon at Sandals, Bahamas!  We wish you a happy and everlasting marraige and will keep in touch.  Gongratulations!!!!!  Laura & Jack</b><br>
+Laura & Jack Catanzarite - Pittsburgh, PA - Tuesday, August 09, 2005 at 05:30:42 (PDT)<hr>
+
+<b>What a great website!!Wish I could be there this coming weekend to celebrate with you guys.Have a great wedding day!!!Hugs and Kisses from Silke</b><br>
+Silke Schwarz - Munich, Germany - Wednesday, July 20, 2005 at 01:26:09 (PDT)<hr>
+
+<b>Wow...She really nailed you on the description in her comments about you in college...You were the same way after you graduated..Hhahaha Nice web site... Glad to dee you're finally settling down Fred. Wish i could make the wedding...even though I wasn't invited...Just to see Ernie in a Tux would be worth the air ticket.. All the best.. Rod and Tina Aasen.... P.S...I hope you're as happy as we've been for the last 19 yrs... rodney.l.aasen@boeing.com</b><br>
+Rod - Seattle, Wa - Saturday, July 16, 2005 at 11:52:09 (PDT)<hr>
+
+<b>Great Website, but make the font larger for all us old geezers to read will ya! : )</b><br>
+Allen - San Ramon - Saturday, July 09, 2005 at 21:43:50 (PDT)<hr>
+
+<b>You guys make a gorgeous couple! Congrats!</b><br>
+Desiree Ruiz - Chantilly, VA and San Francisco - Tuesday, June 14, 2005 at 07:41:59 (PDT)<hr>
+
+<b>Congratulations!  I have to agree with the other posters that the site is really nice, but my favorite parts, hands down, "Our Story."  Having lived with Fred I got a good laugh out of that one.</b><br>
+Brian Sevilla - San Francisco, CA - Monday, May 23, 2005 at 08:42:43 (PDT)<hr>
+
+<b>I'm really late doing this, huh?  Anyway, I can't be happier for my big brother to be getting married, especially to someone as great as Amy.  Best wishes of course, but knowing Amy and Fred I'm sure they'll be successful in all their endeavors!  </b><br>
+Alice  - Milpitas, CA - Friday, March 04, 2005 at 21:06:16 (PST)<hr>
+
+<b>Hey!!
+  really happy for you guys, although I can not make it to your wedding due to serving in the air force, special gift must be there on time! let's wait and see.
+                        </b><br>
+torrent - Taiwan, Taipei - Wednesday, March 02, 2005 at 02:04:13 (PST)<hr>
+
+<b>This is so awesome!!  You guys did a truly beautiful job.  I look forward to the updates.</b><br>
+Kathy Haras - San Francisco, CA - Tuesday, March 01, 2005 at 16:54:59 (PST)<hr>
+
+<b>Absolutely wonderful and entertaining.  I always enjoy learning more about my friends.  Thanks for sharing!</b><br>
+Christina Arroyo - Walnut Creek, CA - Saturday, February 26, 2005 at 20:34:49 (PST)<hr>
+
+<b>damn fred u've got some skills! excellent site.  congratulations. </b><br>
+gabe rivera - arlington, va - Friday, February 25, 2005 at 21:38:37 (PST)<hr>
+
+<b>Love the website.... you did a great job with it! Congratulations to you! Clayton and I wish you the best... </b><br>
+Kathy Siacotos Schupp - Oakland, CA - Thursday, February 24, 2005 at 21:16:26 (PST)<hr>
+
+<b>Wow, what an amazing site!  You guys did an awesome job.  We are really looking forward to the big event and are very happy for you!</b><br>
+Heather Atalla - Walnut Creek, CA - Thursday, February 24, 2005 at 19:12:46 (PST)<hr>
+
+<b>What a wonderful web site, and what a wonderful job you did with it. Didn't have anything like this in my day. So happy for you both, and so exited about your excitement!</b><br>
+Bruce (the shark) - San Jose - Thursday, February 24, 2005 at 17:23:09 (PST)<hr>
+
+<b>Awww...look at my little brother all grown up and mature-like. The story behind those little kid photos is adorable -- Fred was sent to school with his own little suit and tie, as any precious, cherished, only Korean son should, and he took them off for the pictures! My mom was so annoyed that she actually wrote the details on the back of his school photos. She also noted that Fred couldn't stop smiling at the tender age of 5, 6, etc.
+
+Well, as we all know, Fred has never been able to stop smiling, and he certainly has many smiles in store with his bride-to-be. I'm so very excited for both of you as you start your married life together.</b><br>
+Jeannie Im - New York, NY - Thursday, February 24, 2005 at 16:25:13 (PST)<hr>
+
+<b>who'd a thunk it?  congrats!  beautiful work on the site- had me choked up.</b><br>
+hung ly - oakland, ca - Thursday, February 24, 2005 at 16:07:49 (PST)<hr>
+
+<b>Congratulations to the both of you! Such an exciting time you are headed for; thanks for letting us share your special day with you! Looking forward to it!! It's a hosted bar, right? :)</b><br>
+Kevin & Jen Ebilane - Dublin, CA - Thursday, February 24, 2005 at 13:49:22 (PST)<hr>
+
+<b>I am so bummed that fred didn't wait for me!</b><br>
+Anil - San Francisco, CA - Thursday, February 24, 2005 at 11:39:32 (PST)<hr>
+
+<b>Congratuations!  As I told you before, love the site, the stories are fantastic!  Best wishes to my little big sister and my soon to be big brother!</b><br>
+Judy - Playa Del Rey, CA - Thursday, February 24, 2005 at 10:44:00 (PST)<hr>
+
+<b>Hey...can we get a better shot of the ring?  </b><br>
+Evain - roseville - Wednesday, February 23, 2005 at 21:08:24 (PST)<hr>
+
+<b>What a cool website!!!  I love the stories!  Pearl's engaged??!!  Congrats to her too!!  </b><br>
+Evain - Roseville - Wednesday, February 23, 2005 at 21:05:20 (PST)<hr>
+
+<b>How sweet! This is an awesome site. I think I'm going to cry... Sniff...snifff... Wishing you all the happiness and love.</b><br>
+Mary Anne T. - San Francisco, CA - Wednesday, February 23, 2005 at 20:21:44 (PST)<hr>
+
+<b>"Is this the little girl I carried? Is this the little boy at play? I don't remember growing older, When did they? ......"
+Thanks for sharing the wonderful happy news and stories. Congratulations! Enjoy the great time in the many years ahead of you!  </b><br>
+Yo-wei - San Jos, CA - Wednesday, February 23, 2005 at 19:38:52 (PST)<hr>
+
+<b>really cool website, Amy & Fred!
+Some of the photos look familiar. ;-)Congratulations again, and can't wait to celebrate your B-I-G day! 
+
+
+</b><br>
+daphne - sjc - Wednesday, February 23, 2005 at 17:09:50 (PST)<hr>
+
+<b>Congratulations !!
+Wonderful website, and lovely story
+wishing you many precious moments together.&#27704;&#28020;&#24859;&#27827;  &#30333;&#39318;&#20565;&#32769;</b><br>
+Kitty Tsai - San Jose, CA - Wednesday, February 23, 2005 at 17:09:00 (PST)<hr>
+
+<b>Wow-what a website.  Congrats to both of you.  Looking forward to the 23rd!</b><br>
+Sean Peasley - San Francisco - Wednesday, February 23, 2005 at 16:00:00 (PST)<hr>
+
+<b>Very nice website with all of the pictures and anecdotes.</b><br>
+Clayton Schupp - Oakland, CA - Wednesday, February 23, 2005 at 15:30:24 (PST)<hr>
+
+<b>what a beautiful (and very informative) site!  congratulations to the both of you!</b><br>
+sarah - san francisco - Wednesday, February 23, 2005 at 11:59:58 (PST)<hr>
+
+<b>Hey guys,
+Congratulations on what will be a great start! Looking forward to a fantastic day. Claud and I are so happy for you.</b><br>
+Trev - San Fran, CA - Wednesday, February 23, 2005 at 11:35:20 (PST)<hr>
+
+<b>What a wonderful website!!!
+
+Truly a first for me...
+
+Thanks for including Christina, Annalise and I in 'Family and Friends.' I honestly had goosebumps (the last time I experienced this was during Annalise's birth) as I was reading both of your stories and the proposal description.
+
+You guys did a wonderful job putting this gem of a website together.
+</b><br>
+Alan Arroyo - Walnut Creek, CA - Wednesday, February 23, 2005 at 11:18:01 (PST)<hr>
+
+<b>Congratulations Amy and Fred! We are blown away with all the details! If this website is a pre-cursor to your wedding, we know it will be truly beautiful.  This is one of the most awesome wedding websites we have seen. Each detail is truly done with much love. Rick and I are so happy for you. We wish you guys the best always! </b><br>
+Joshlyn and Rick De Ala - San Ramon, CA - Wednesday, February 23, 2005 at 11:16:07 (PST)<hr>
+
+<b>After looking at this love site, one can only feel the enthusiasm, passion  and excitement that you have for each other.  I am very happy for both of you and look forward to having fun on your day of celebration.  Congratulations!!!  
+</b><br>
+Dan Quilici - Los Altos, CA - Wednesday, February 23, 2005 at 11:12:09 (PST)<hr>
+
+<b>I hope I am the first one to hit your website.  I love reading the stories, and looking at the adorable 1st year b-day pic of Fred and the beautiful Amy as I have always known.  I am soo happy for you guys and pround to be the flower girl's mom.  Congratulations again.</b><br>
+Xiaoming - Tuesday, February 22, 2005 at 16:15:51 (PST)<hr>
+
+<b>CONGRATULATIONS</b><br>
+Pearl T - Saratoga, CA - Tuesday, February 22, 2005 at 11:59:24 (PST)<hr>
+
+<b>Congratulations to the first of the trio that is getting married. 
+Wishing the both of you a wonderful life together!  Luv you!</b><br>
+Junko - San Jose, CA - Friday, February 18, 2005 at 21:18:57 (PST)<hr>
+
+<b>Congratulations!!! Wishing you and Fred the best. </b><br>
+Jenny - Cupertino, CA - Friday, February 18, 2005 at 21:14:28 (PST)<hr>
+
+</div>
+              </td>
+          </tr>
+        </table>
+      </form>
+     </div>
+    </td>
+  </tr>
+  <tr> 
+    <td height="1"></td>
+    <td></td>
+    <td width="269"></td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
